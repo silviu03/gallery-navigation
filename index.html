@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galley Navigation</title>
+    <link rel="stylesheet" href="./gallery-navigation.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <meta http-equiv="refresh" content="">
+
+    <meta name="description" content="Front end development course">
+    <meta name="keywords" content="HTML,CSS,Learning">
+    <meta name="author" content="Nebunu Silviu">
+    <link rel="stylesheet" href="../bundles/font.awesome/fontawesome-free-5.15.4-web/css/all.css">
+
+    <script src="../bundles/jquery/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a data-link-item='0' class="menu-item" href="#">Home</a>
+            <a data-link-item='1' class="menu-item hair-style-item" href="#">Hair Styles</a>
+            <a data-link-item='2' class="menu-item contact-lens-item" href="#">Contact Lens</a>
+            <a data-link-item='3' class="menu-item favorite-item" href="#"><i class="far fa-heart"></i></a>
+            <a data-link-item='4' class="menu-item" href="#">More info</a>
+        </header>
+        <main>
+            <div class="target-item home-wrapper hidden">
+                <h1>Welcome to Custom Styles</h1>
+            </div>
+
+            <div class="target-item hair-styles-wrapper hidden">
+                <!-- <div>
+                    <div class="hair-style-info">
+                        <span>Hair Style 1</span>
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="img-wrapper hair1"></div>
+                    <div class="hair-style-info">
+                        <span>Something</span>
+                        <span>$60</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="hair-style-info">
+                        <span>Hair Style 1</span>
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="img-wrapper hair2"></div>
+                    <div class="hair-style-info">
+                        <span>Something</span>
+                        <span>$60</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="hair-style-info">
+                        <span>Hair Style 1</span>
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="img-wrapper hair3"></div>
+                    <div class="hair-style-info">
+                        <span>Something</span>
+                        <span>$60</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="hair-style-info">
+                        <span>Hair Style 1</span>
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="img-wrapper hair4"></div>
+                    <div class="hair-style-info">
+                        <span>Something</span>
+                        <span>$60</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="hair-style-info">
+                        <span>Hair Style 1</span>
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="img-wrapper hair5"></div>
+                    <div class="hair-style-info">
+                        <span>Something</span>
+                        <span>$60</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="hair-style-info">
+                        <span>Hair Style 1</span>
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="img-wrapper hair6"></div>
+                    <div class="hair-style-info">
+                        <span>Something</span>
+                        <span>$60</span>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="target-item contact-lens-wrapper" id="contact-lens-wrapper">
+
+            </div>
+            <div class="overlay-contact-lens ">
+                <div class="center-box">
+                    <div class="overlay-contact-lens-box lens">
+                        <i data-direction="left" class="fas fa-chevron-left"></i>
+                        <div class="lens-img-wrapper"></div>
+                        <i data-direction="right" class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="target-item favorites hidden">
+                <div>
+                    <h2>Favorites</h2>
+                    <button id="remove">Remove all</button>
+                </div>
+
+            </div>
+        </main>
+
+
+    </div>
+
+
+    <script src="./contact-lens-data.js"></script>
+    <script src="./gallery-navigation.js"></script>
+</body>
+
+</html>
