@@ -47,7 +47,7 @@ header a {
 }
 .hair-styles-wrapper > div {
     height: 250px;
-    width: 15%;
+    width: 200px;
     background-color: rgb(224, 224, 224);
     margin-bottom: 20px;
     padding: 20px;
@@ -174,7 +174,12 @@ header a {
     width: 250px;
     height: 250px;
     background-color: #fff;
-    
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.overlay-contact-lens-box i {
+    cursor: pointer;
 }
 .lens-img-wrapper {
     width: 80%;
@@ -182,6 +187,44 @@ header a {
     background-size: cover;
 }
 
+.favorites-item {
+    position: relative;
+}
+.favorites-number {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(3, 197, 3);
+    top: -5px;
+    right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: black;
+}
+
+.favorites-properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-top: 50px;
+    background-color: #fff;
+}
+.favorites-properties > div {
+    height: 250px;
+    width: 200px;
+    background-color: rgb(224, 224, 224);
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-right: 20px;
+}
+.selected {
+    /* background-color: rgb(161, 0, 0); */
+    color: rgb(161, 0, 0);
+}
 .hidden {
     display: none;
 }

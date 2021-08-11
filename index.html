@@ -28,11 +28,14 @@
             <a data-link-item='0' class="menu-item" href="#">Home</a>
             <a data-link-item='1' class="menu-item hair-style-item" href="#">Hair Styles</a>
             <a data-link-item='2' class="menu-item contact-lens-item" href="#">Contact Lens</a>
-            <a data-link-item='3' class="menu-item favorite-item" href="#"><i class="far fa-heart"></i></a>
+            <a data-link-item='3' class="menu-item favorites-item" href="#">
+                <i class="far fa-heart"></i>
+                <div class="favorites-number hidden"></div>
+            </a>
             <a data-link-item='4' class="menu-item" href="#">More info</a>
         </header>
         <main>
-            <div class="target-item home-wrapper hidden">
+            <div class="target-item home-wrapper ">
                 <h1>Welcome to Custom Styles</h1>
             </div>
 
@@ -105,7 +108,7 @@
                 </div> -->
             </div>
 
-            <div class="target-item contact-lens-wrapper" id="contact-lens-wrapper">
+            <div class="target-item contact-lens-wrapper hidden" id="contact-lens-wrapper">
 
             </div>
             <div class="overlay-contact-lens ">
@@ -119,10 +122,12 @@
             </div>
 
             <div class="target-item favorites hidden">
-                <div>
+                <div class="title-wrapper">
                     <h2>Favorites</h2>
                     <button id="remove">Remove all</button>
                 </div>
+
+                <section class="favorites-properties"></section>
 
             </div>
         </main>
@@ -130,7 +135,7 @@
 
     </div>
 
-
+    <script src="./hair-style-data.js"></script>
     <script src="./contact-lens-data.js"></script>
     <script src="./gallery-navigation.js"></script>
 </body>
